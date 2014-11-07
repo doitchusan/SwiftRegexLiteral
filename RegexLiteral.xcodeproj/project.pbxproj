@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4DAC2261A0D16DB00717471 /* RegexLiteral.h in Headers */ = {isa = PBXBuildFile; fileRef = E4DAC2251A0D16DB00717471 /* RegexLiteral.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4DAC22C1A0D16DB00717471 /* RegexLiteral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DAC2201A0D16DB00717471 /* RegexLiteral.framework */; };
+		E4DAC2331A0D16DB00717471 /* RegexLiteralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DAC2321A0D16DB00717471 /* RegexLiteralTests.swift */; };
+		E4DAC23D1A0D16E600717471 /* RegexLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DAC23C1A0D16E600717471 /* RegexLiteral.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4DAC22D1A0D16DB00717471 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4DAC2171A0D16DB00717471 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4DAC21F1A0D16DB00717471;
+			remoteInfo = RegexLiteral;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4DAC2201A0D16DB00717471 /* RegexLiteral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RegexLiteral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4DAC2241A0D16DB00717471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4DAC2251A0D16DB00717471 /* RegexLiteral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegexLiteral.h; sourceTree = "<group>"; };
+		E4DAC22B1A0D16DB00717471 /* RegexLiteralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegexLiteralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4DAC2311A0D16DB00717471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4DAC2321A0D16DB00717471 /* RegexLiteralTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexLiteralTests.swift; sourceTree = "<group>"; };
+		E4DAC23C1A0D16E600717471 /* RegexLiteral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexLiteral.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4DAC21C1A0D16DB00717471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4DAC2281A0D16DB00717471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4DAC22C1A0D16DB00717471 /* RegexLiteral.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4DAC2161A0D16DB00717471 = {
+			isa = PBXGroup;
+			children = (
+				E4DAC2221A0D16DB00717471 /* RegexLiteral */,
+				E4DAC22F1A0D16DB00717471 /* RegexLiteralTests */,
+				E4DAC2211A0D16DB00717471 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4DAC2211A0D16DB00717471 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4DAC2201A0D16DB00717471 /* RegexLiteral.framework */,
+				E4DAC22B1A0D16DB00717471 /* RegexLiteralTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4DAC2221A0D16DB00717471 /* RegexLiteral */ = {
+			isa = PBXGroup;
+			children = (
+				E4DAC2251A0D16DB00717471 /* RegexLiteral.h */,
+				E4DAC23C1A0D16E600717471 /* RegexLiteral.swift */,
+				E4DAC2231A0D16DB00717471 /* Supporting Files */,
+			);
+			path = RegexLiteral;
+			sourceTree = "<group>";
+		};
+		E4DAC2231A0D16DB00717471 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4DAC2241A0D16DB00717471 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4DAC22F1A0D16DB00717471 /* RegexLiteralTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4DAC2321A0D16DB00717471 /* RegexLiteralTests.swift */,
+				E4DAC2301A0D16DB00717471 /* Supporting Files */,
+			);
+			path = RegexLiteralTests;
+			sourceTree = "<group>";
+		};
+		E4DAC2301A0D16DB00717471 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4DAC2311A0D16DB00717471 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E4DAC21D1A0D16DB00717471 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4DAC2261A0D16DB00717471 /* RegexLiteral.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E4DAC21F1A0D16DB00717471 /* RegexLiteral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4DAC2361A0D16DB00717471 /* Build configuration list for PBXNativeTarget "RegexLiteral" */;
+			buildPhases = (
+				E4DAC21B1A0D16DB00717471 /* Sources */,
+				E4DAC21C1A0D16DB00717471 /* Frameworks */,
+				E4DAC21D1A0D16DB00717471 /* Headers */,
+				E4DAC21E1A0D16DB00717471 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RegexLiteral;
+			productName = RegexLiteral;
+			productReference = E4DAC2201A0D16DB00717471 /* RegexLiteral.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E4DAC22A1A0D16DB00717471 /* RegexLiteralTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4DAC2391A0D16DB00717471 /* Build configuration list for PBXNativeTarget "RegexLiteralTests" */;
+			buildPhases = (
+				E4DAC2271A0D16DB00717471 /* Sources */,
+				E4DAC2281A0D16DB00717471 /* Frameworks */,
+				E4DAC2291A0D16DB00717471 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4DAC22E1A0D16DB00717471 /* PBXTargetDependency */,
+			);
+			name = RegexLiteralTests;
+			productName = RegexLiteralTests;
+			productReference = E4DAC22B1A0D16DB00717471 /* RegexLiteralTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4DAC2171A0D16DB00717471 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = yoshitaka;
+				TargetAttributes = {
+					E4DAC21F1A0D16DB00717471 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					E4DAC22A1A0D16DB00717471 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = E4DAC21A1A0D16DB00717471 /* Build configuration list for PBXProject "RegexLiteral" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E4DAC2161A0D16DB00717471;
+			productRefGroup = E4DAC2211A0D16DB00717471 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4DAC21F1A0D16DB00717471 /* RegexLiteral */,
+				E4DAC22A1A0D16DB00717471 /* RegexLiteralTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4DAC21E1A0D16DB00717471 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4DAC2291A0D16DB00717471 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4DAC21B1A0D16DB00717471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4DAC23D1A0D16E600717471 /* RegexLiteral.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4DAC2271A0D16DB00717471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4DAC2331A0D16DB00717471 /* RegexLiteralTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4DAC22E1A0D16DB00717471 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4DAC21F1A0D16DB00717471 /* RegexLiteral */;
+			targetProxy = E4DAC22D1A0D16DB00717471 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4DAC2341A0D16DB00717471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4DAC2351A0D16DB00717471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4DAC2371A0D16DB00717471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RegexLiteral/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4DAC2381A0D16DB00717471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RegexLiteral/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E4DAC23A1A0D16DB00717471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RegexLiteralTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E4DAC23B1A0D16DB00717471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RegexLiteralTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4DAC21A1A0D16DB00717471 /* Build configuration list for PBXProject "RegexLiteral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4DAC2341A0D16DB00717471 /* Debug */,
+				E4DAC2351A0D16DB00717471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4DAC2361A0D16DB00717471 /* Build configuration list for PBXNativeTarget "RegexLiteral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4DAC2371A0D16DB00717471 /* Debug */,
+				E4DAC2381A0D16DB00717471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E4DAC2391A0D16DB00717471 /* Build configuration list for PBXNativeTarget "RegexLiteralTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4DAC23A1A0D16DB00717471 /* Debug */,
+				E4DAC23B1A0D16DB00717471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4DAC2171A0D16DB00717471 /* Project object */;
+}
