@@ -78,12 +78,12 @@ public class Regex {
             }
             
             var results = Array<String>()
-            var matches = rexp.matchesInString(s, options: nil, range: NSMakeRange(0, s.utf16Count))
+            var matches = rexp.matchesInString(s, options: nil, range: NSMakeRange(0, count(s.utf16)))
             for var i = 0; i < matches.count; i++ {
-                var chResult = matches[i] as NSTextCheckingResult
+                var chResult = matches[i] as! NSTextCheckingResult
                 for var r = 0; r < chResult.numberOfRanges ; r++ {
                     var range = chResult.rangeAtIndex(r)
-                    if range.location <= s.utf16Count && range.length > 0 {
+                    if range.location <= count(s.utf16) && range.length > 0 {
                         var matchString = (s as NSString).substringWithRange(range)
                         results.append(matchString)
                     }
@@ -122,7 +122,7 @@ public class Regex {
         
         var error: NSError?
         if let rexp = NSRegularExpression(pattern: self.literal.value, options: options, error: &error) {
-            numberOfMatches = rexp.numberOfMatchesInString(s, options: nil, range: NSMakeRange(0, s.utf16Count))
+            numberOfMatches = rexp.numberOfMatchesInString(s, options: nil, range: NSMakeRange(0, count(s.utf16)))
         }
         
         return numberOfMatches > 0
