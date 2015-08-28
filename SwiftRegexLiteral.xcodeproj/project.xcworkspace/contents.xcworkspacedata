@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:RegexLiteral.xcodeproj">
+      location = "self:SwiftRegexLiteral.xcodeproj">
    </FileRef>
 </Workspace>

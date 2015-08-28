@@ -1,50 +1,39 @@
 //
-//  RegexLiteral.swift
-//  RegexLiteral
+//  SwiftRegexLiteral.swift
+//  SwiftRegexLiteral
 //
-//  Created by yoshitaka on 2014/11/08.
-//  Copyright (c) 2014年 yoshitaka. All rights reserved.
+//  Created by Yoshitaka Kato on 2015/08/28.
+//  Copyright (c) 2015年 doitchusan. All rights reserved.
 //
 
 import Foundation
 
 public class RegexLiteral {
-    // 正規表現のパターン文字列
-    private var value : String
+    private var value: String
     
-    // 各種フラグ
-    private var flag_i : Bool = false
-    private var flag_g : Bool = false
-    private var flag_m : Bool = false
+    private var flag_i: Bool = false
+    private var flag_g: Bool = false
+    private var flag_m: Bool = false
     
-    public init (_ value : String) {
+    private init (_ value : String) {
         self.value = value
     }
     
-    /**
-    * 大文字・小文字無視
-    */
-    public var i : RegexLiteral {
+    public var i: RegexLiteral {
         get {
             self.flag_i = true
             return self
         }
     }
     
-    /**
-    * 複数マッチ
-    */
-    public var g : RegexLiteral {
+    public var g: RegexLiteral {
         get {
             self.flag_g = true
             return self
         }
     }
     
-    /**
-    * 複数行検索
-    */
-    public var m : RegexLiteral {
+    public var m: RegexLiteral {
         get {
             self.flag_m = true
             return self
@@ -53,14 +42,13 @@ public class RegexLiteral {
 }
 
 public class Regex {
-    private var literal : RegexLiteral
+    private var literal: RegexLiteral
     
-    private init (_ literal : RegexLiteral) {
+    private init (literal: RegexLiteral) {
         self.literal = literal
     }
     
-    public func match(s: String) -> Array<String>? {
-        // オプションフラグ
+    public func match(s: String) -> [String]? {
         var options = NSRegularExpressionOptions.allZeros
         
         if self.literal.flag_i {
@@ -68,7 +56,7 @@ public class Regex {
         }
         
         if self.literal.flag_m {
-            options |= .DotMatchesLineSeparators
+            options |= (.AnchorsMatchLines | .DotMatchesLineSeparators)
         }
         
         var error: NSError?
@@ -77,8 +65,8 @@ public class Regex {
                 return nil
             }
             
-            var results = Array<String>()
-            var matches = rexp.matchesInString(s, options: nil, range: NSMakeRange(0, count(s.utf16)))
+            var results = [String]()
+            var matches = rexp.matchesInString(s, options: nil, range: NSMakeRange(0, count(s)))
             for var i = 0; i < matches.count; i++ {
                 var chResult = matches[i] as! NSTextCheckingResult
                 for var r = 0; r < chResult.numberOfRanges ; r++ {
@@ -107,7 +95,6 @@ public class Regex {
     }
     
     public func isMatch(s: String) -> Bool {
-        // オプションフラグ
         var options = NSRegularExpressionOptions.allZeros
         
         if self.literal.flag_i {
@@ -122,7 +109,7 @@ public class Regex {
         
         var error: NSError?
         if let rexp = NSRegularExpression(pattern: self.literal.value, options: options, error: &error) {
-            numberOfMatches = rexp.numberOfMatchesInString(s, options: nil, range: NSMakeRange(0, count(s.utf16)))
+            numberOfMatches = rexp.numberOfMatchesInString(s, options: nil, range: NSMakeRange(0, count(s)))
         }
         
         return numberOfMatches > 0
@@ -139,14 +126,14 @@ public postfix func / (s: String) -> RegexLiteral {
 }
 
 public prefix func / (literal: RegexLiteral) -> Regex {
-    return Regex(literal)
+    return Regex(literal: literal)
 }
 
-public func ~ (left: String, right: Regex) -> Array<String>? {
+public func ~ (left: String, right: Regex) -> [String]? {
     return right.match(left)
 }
 
-public func ~ (left: Regex , right: String) -> Array<String>? {
+public func ~ (left: Regex , right: String) -> [String]? {
     return left.match(right)
 }
 
@@ -159,7 +146,7 @@ public func =~ (left: Regex , right: String) -> Bool {
 }
 
 public extension String {
-    public func match(regex: Regex) -> Array<String>? {
+    public func match(regex: Regex) -> [String]? {
         return regex.match(self)
     }
     

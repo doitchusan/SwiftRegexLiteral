@@ -1,15 +1,15 @@
 //
-//  RegexLiteralTests.swift
-//  RegexLiteralTests
+//  SwiftRegexLiteralTests.swift
+//  SwiftRegexLiteralTests
 //
-//  Created by yoshitaka on 2014/11/08.
-//  Copyright (c) 2014年 yoshitaka. All rights reserved.
+//  Created by Yoshitaka Kato on 2015/08/28.
+//  Copyright (c) 2015年 doitchusan. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class RegexLiteralTests: XCTestCase {
+class SwiftRegexLiteralTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
