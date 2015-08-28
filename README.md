@@ -1,7 +1,7 @@
 SwiftRegexLiteral
 ====
 
-Pseudoly Regular expression for swift extensions.
+Pseudoly regular expression Literal for swift.
 
 ## Requirement
 
@@ -12,7 +12,7 @@ Swift 1.2 / iOS 8.0+
 
 ### First pattern match value
 
-```:Swift
+```
 let value = "abcd"
 
 value.match(/"[a-z]"/)  // ["a"]
@@ -57,4 +57,4 @@ The MIT License. See LICENSE for details.
 
 ====
 
-[@doitchusan](https://twitter.com/doitchusan), August 2015.
+[@doitchusan](https://twitter.com/doitchusan)
