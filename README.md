@@ -1,54 +1,78 @@
 SwiftRegexLiteral
 ====
 
-Pseudoly regular expression Literal for swift.
+Pretending regular expression literal library for swift
 
 ## Requirement
 
-Swift 1.2 / iOS 8.0+
+Swift 2.0 / iOS 8.0+
 
 ## Usage
 
+### Matching value
 
-### First pattern match value
+```swift
+// no option flags
+"abcd".match(/"[a-z]"/)     // ["a"]
+"abcd".match(/"[0-9]"/)     // []
 
-```
-let value = "abcd"
+"abcd" ~ /"[a-z]"/          // ["a"]
+"abcd" ~ /"[0-9]"/          // []
 
-value.match(/"[a-z]"/)  // ["a"]
-value.match(/"[0-9]"/)  // nil
+// option flags (multiline)
+"abcd\nefgh" ~ /"^.+"/.m    // ["abcd\nefgh"]
 
-value ~ /"[a-z]"/       // ["a"]
-value ~ /"[0-9]"/       // nil
-```
+// option flags (ignore case)
+"ABCD" ~ /"[a-z]"/.i        // ["A"]
 
+// option flags (all pattern match)
+"abcd" ~ /"[a-z]"/.g        // ["a", "b", "c", "d"]
 
-### Decision pattern match
-
-```
-let value = "abcd"
-
-value.isMatch(/"[a-z]"/)    // true
-value.isMatch(/"[0-9]"/)    // false
-
-value =~ /"[a-z]"/          // true
-value =~ /"[0-9]"/          // false
+// option flags (combination)
+"ABCD" ~ /"[a-z]"/.i.g      // ["A", "B", "C", "D"]
 ```
 
 
-### Option Flags
+### Matching check
 
+```swift
+"abcd".isMatch(/"[a-z]"/)    // true
+"abcd".isMatch(/"[0-9]"/)    // false
+
+"abcd" =~ /"[a-z]"/          // true
+"abcd" =~ /"[0-9]"/          // false
 ```
-let value = "abcd"
 
-// all pattern match
-value ~ /"[a-z]"/.g     // ["a", "b", "c", "d"]
+### Switch-case pattern matching
 
-// case insensitive
-value ~ /"[A-Z]"/.i     // ["a"]
+```swift
+switch "abcd" {
+case /"^[0-9]+$"/:
+    break
 
-// combination
-value ~ /"[A-Z]"/.i.g   // ["a", "b", "c", "d"]
+case /"^[a-z]+$"/:  // match!!
+    break
+
+case /"^[A-Z]+$"/:
+    break
+
+default:
+    break
+}
+
+switch /"^[a-z]+$"/ {
+case "1234":
+    break
+
+case "abcd":        // match!!
+    break
+
+case "ABCD":
+    break
+
+default:
+    break
+}
 ```
 
 ## License

@@ -8,28 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E4D37A191B9014330081C2BB /* SwiftRegexLiteral.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D37A181B9014330081C2BB /* SwiftRegexLiteral.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E4D37A1F1B9014330081C2BB /* SwiftRegexLiteral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D37A131B9014330081C2BB /* SwiftRegexLiteral.framework */; };
-		E4D37A261B9014330081C2BB /* SwiftRegexLiteralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D37A251B9014330081C2BB /* SwiftRegexLiteralTests.swift */; };
 		E4D37A301B9014860081C2BB /* SwiftRegexLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D37A2F1B9014860081C2BB /* SwiftRegexLiteral.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E4D37A201B9014330081C2BB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E4D37A0A1B9014330081C2BB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E4D37A121B9014330081C2BB;
-			remoteInfo = SwiftRegexLiteral;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E4D37A131B9014330081C2BB /* SwiftRegexLiteral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftRegexLiteral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D37A171B9014330081C2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4D37A181B9014330081C2BB /* SwiftRegexLiteral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftRegexLiteral.h; sourceTree = "<group>"; };
-		E4D37A1E1B9014330081C2BB /* SwiftRegexLiteralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftRegexLiteralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4D37A241B9014330081C2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4D37A251B9014330081C2BB /* SwiftRegexLiteralTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRegexLiteralTests.swift; sourceTree = "<group>"; };
 		E4D37A2F1B9014860081C2BB /* SwiftRegexLiteral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftRegexLiteral.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,14 +26,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E4D37A1B1B9014330081C2BB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E4D37A1F1B9014330081C2BB /* SwiftRegexLiteral.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,7 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				E4D37A151B9014330081C2BB /* SwiftRegexLiteral */,
-				E4D37A221B9014330081C2BB /* SwiftRegexLiteralTests */,
 				E4D37A141B9014330081C2BB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				E4D37A131B9014330081C2BB /* SwiftRegexLiteral.framework */,
-				E4D37A1E1B9014330081C2BB /* SwiftRegexLiteralTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,23 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				E4D37A171B9014330081C2BB /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E4D37A221B9014330081C2BB /* SwiftRegexLiteralTests */ = {
-			isa = PBXGroup;
-			children = (
-				E4D37A251B9014330081C2BB /* SwiftRegexLiteralTests.swift */,
-				E4D37A231B9014330081C2BB /* Supporting Files */,
-			);
-			path = SwiftRegexLiteralTests;
-			sourceTree = "<group>";
-		};
-		E4D37A231B9014330081C2BB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E4D37A241B9014330081C2BB /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -137,37 +95,17 @@
 			productReference = E4D37A131B9014330081C2BB /* SwiftRegexLiteral.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E4D37A1D1B9014330081C2BB /* SwiftRegexLiteralTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E4D37A2C1B9014330081C2BB /* Build configuration list for PBXNativeTarget "SwiftRegexLiteralTests" */;
-			buildPhases = (
-				E4D37A1A1B9014330081C2BB /* Sources */,
-				E4D37A1B1B9014330081C2BB /* Frameworks */,
-				E4D37A1C1B9014330081C2BB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E4D37A211B9014330081C2BB /* PBXTargetDependency */,
-			);
-			name = SwiftRegexLiteralTests;
-			productName = SwiftRegexLiteralTests;
-			productReference = E4D37A1E1B9014330081C2BB /* SwiftRegexLiteralTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E4D37A0A1B9014330081C2BB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = doitchusan;
 				TargetAttributes = {
 					E4D37A121B9014330081C2BB = {
-						CreatedOnToolsVersion = 6.4;
-					};
-					E4D37A1D1B9014330081C2BB = {
 						CreatedOnToolsVersion = 6.4;
 					};
 				};
@@ -185,20 +123,12 @@
 			projectRoot = "";
 			targets = (
 				E4D37A121B9014330081C2BB /* SwiftRegexLiteral */,
-				E4D37A1D1B9014330081C2BB /* SwiftRegexLiteralTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E4D37A111B9014330081C2BB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E4D37A1C1B9014330081C2BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -216,23 +146,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E4D37A1A1B9014330081C2BB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E4D37A261B9014330081C2BB /* SwiftRegexLiteralTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E4D37A211B9014330081C2BB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E4D37A121B9014330081C2BB /* SwiftRegexLiteral */;
-			targetProxy = E4D37A201B9014330081C2BB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E4D37A271B9014330081C2BB /* Debug */ = {
@@ -257,6 +171,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -272,7 +187,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -314,7 +229,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -335,6 +250,7 @@
 				INFOPLIST_FILE = SwiftRegexLiteral/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "doitchusan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -352,38 +268,9 @@
 				INFOPLIST_FILE = SwiftRegexLiteral/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "doitchusan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		E4D37A2D1B9014330081C2BB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwiftRegexLiteralTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E4D37A2E1B9014330081C2BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwiftRegexLiteralTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -404,15 +291,6 @@
 			buildConfigurations = (
 				E4D37A2A1B9014330081C2BB /* Debug */,
 				E4D37A2B1B9014330081C2BB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E4D37A2C1B9014330081C2BB /* Build configuration list for PBXNativeTarget "SwiftRegexLiteralTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E4D37A2D1B9014330081C2BB /* Debug */,
-				E4D37A2E1B9014330081C2BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
